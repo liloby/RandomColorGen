@@ -1,4 +1,4 @@
 <h1 align="center">CounterApp</h1>
 <p align="center">
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/72634228/188451447-01528bdb-d1a5-4b7d-a747-a00634022faa.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/72634228/188763375-8a682d91-3f71-4666-b1ed-2b2674b69505.png">
 </p>
