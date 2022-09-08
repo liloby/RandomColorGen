@@ -1,34 +1,12 @@
-const count = document.querySelector(".count");
-const buttons = document.querySelector(".buttons");
-// const add = document.querySelector('.add')
-// const resetCount = document.querySelector('.reset')
-// const sub = document.querySelector('.subtract')
+const hex = document.querySelector('.hex')
+const btn = document.querySelector('.generate')
+const box = document.querySelector('.counter-div')
 
-buttons.addEventListener("click", (evt) => {
-  if (evt.target.classList.contains("add")) {
-    count.innerHTML++;
-  }
+const generateColor = () => {
+  let randomColor = Math.random().toString(16).substring(2, 8)
+  document.body.style.backgroundColor = "#" + randomColor
+  hex.innerHTML = "#" + randomColor
+  box.classList.add('stylish')
+}
 
-  if (evt.target.classList.contains("subtract")) {
-    count.innerHTML--;
-  }
-
-  if (evt.target.classList.contains("reset")) {
-    count.innerHTML = 0;
-  }
-  count.innerHTML < 0
-    ? (count.style.color = "orangered")
-    : count.innerHTML > 0
-    ? (count.style.color = "yellow")
-    : (count.style.color = "white");
-});
-
-// add.addEventListener('click', () => {
-//     count.innerHTML++
-// })
-// sub.addEventListener('click', () => {
-//     count.innerHTML--
-// })
-// resetCount.addEventListener('click', () => {
-//     count.innerHTML = 0
-// })
+btn.addEventListener('click', generateColor)
